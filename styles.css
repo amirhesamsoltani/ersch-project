@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: vazir-font-bold;
+    src: url(vazir-font-v16.1.0/Vazir-Bold.ttf);
+}
+@font-face {
+    font-family: vazir-font-medium;
+    src: url(vazir-font-v16.1.0/Vazir-Medium.ttf);
+}
+@font-face {
+    font-family: vazir-font-thin;
+    src: url(vazir-font-v16.1.0/Vazir-Thin.ttf);
+}
+
+#navbar-container-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 60px;
+    background-color: rgba(226, 223, 223, 0.651);
+    font-family: vazir-font-bold;
+}
+#navbar-logo-div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    flex: 1;
+}
+#navbar-links-div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+#navbar-links-div > a{
+    padding: 18px 40px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+#navbar-links-div > a:hover:not(:last-child){
+    border-bottom: 1.5px solid;
+    color: rgba(0, 0, 0, 0.452);
+}
